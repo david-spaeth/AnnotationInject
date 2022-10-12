@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author                  = 'pjechris', 'akane'
 
   s.ios.deployment_target   = "8.0"
-  s.swift_version           = "4.2"
+  s.swift_version           = ">= 4.2"
   s.preserve_paths          = 'Sources', 'Scripts', 'Templates'
   s.prepare_command         = './Scripts/generate-annotation-template'
 
