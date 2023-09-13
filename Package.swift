@@ -15,8 +15,8 @@ let package = Package(
         .executable(name: "annotationinject-cli", targets: ["AnnotationCLI"])
     ],
     dependencies: [
-        .package(url: "https://github.com/Swinject/Swinject.git", from: "2.4.0"),
-        .package(url: "https://github.com/krzysztofzablocki/Sourcery", from: "1.8.0"),
+        .package(url: "https://github.com/Swinject/Swinject.git", from: "2.8.3"),
+        .package(url: "https://github.com/krzysztofzablocki/Sourcery", from: "2.0.2"),
         .package(url: "https://github.com/Quick/Nimble", from: "8.0.2"),
         .package(url: "https://github.com/Quick/Quick", from: "2.1.0")
     ],
