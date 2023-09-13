@@ -40,10 +40,10 @@ let package = Package(
             name: "AnnotationCLI",
             dependencies: [],
             path: "CLI",
-            sources: [
-                "Templates",
-                "Scripts",
-                "Sources"
+            resources: [
+                .copy("Templates"),
+                .copy("Scripts"),
+                .copy("Sources")
             ]
         )
     ]
