@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "AEXML",
-        "repositoryURL": "https://github.com/tadija/AEXML.git",
+        "repositoryURL": "https://github.com/tadija/AEXML",
         "state": {
           "branch": null,
           "revision": "38f7d00b23ecd891e1ee656fa6aeebd6ba04ecc3",
@@ -78,8 +78,8 @@
         "repositoryURL": "https://github.com/krzysztofzablocki/Sourcery",
         "state": {
           "branch": null,
-          "revision": "d441f56ba972d04014c6de0f48ac17861ce629f3",
-          "version": "2.0.2"
+          "revision": "29972ee61bf538c8a2ccfd1a3f1a7925f314264a",
+          "version": "1.8.2"
         }
       },
       {
@@ -105,8 +105,8 @@
         "repositoryURL": "https://github.com/SwiftGen/StencilSwiftKit.git",
         "state": {
           "branch": null,
-          "revision": "20e2de5322c83df005939d9d9300fab130b49f97",
-          "version": "2.10.1"
+          "revision": "54cbedcdbb4334e03930adcff7343ffaf317bf0f",
+          "version": "2.8.0"
         }
       },
       {
@@ -114,8 +114,8 @@
         "repositoryURL": "https://github.com/apple/swift-syntax.git",
         "state": {
           "branch": null,
-          "revision": "2c49d66d34dfd6f8130afdba889de77504b58ec0",
-          "version": "508.0.1"
+          "revision": "0b6c22b97f8e9320bca62e82cdbee601cf37ad3f",
+          "version": "0.50600.1"
         }
       },
       {
@@ -141,8 +141,8 @@
         "repositoryURL": "https://github.com/jpsim/Yams.git",
         "state": {
           "branch": null,
-          "revision": "0d9ee7ea8c4ebd4a489ad7a73d5c6cad55d6fed3",
-          "version": "5.0.6"
+          "revision": "9ff1cc9327586db4e0c8f46f064b6a82ec1566fa",
+          "version": "4.0.6"
         }
       }
     ]
