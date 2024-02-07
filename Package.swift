@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "AnnotationInject",
     platforms: [
-        .macOS(.v10_13)
+        .macOS(.v10_15)
     ],
     products: [
         .library(
@@ -36,7 +36,7 @@ let package = Package(
             dependencies: ["AnnotationInject", "Quick", "Nimble"],
             path: "Tests"
         ),
-        .target(
+        .executableTarget(
             name: "AnnotationCLI",
             dependencies: [],
             path: "CLI",
