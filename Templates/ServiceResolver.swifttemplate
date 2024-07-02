@@ -1,6 +1,16 @@
 import Foundation
 import Swinject
-<%_ let imports = (argument["imports"] as? String)?.split(separator: ",") ?? [] -%>
+<%_ 
+    let imports: [String]!
+
+    if let _imports = (argument["imports"] as? [String]) {
+      imports =  _imports
+    } else if let _import = argument["imports"] as? String {
+         imports = [_import]
+    } else {
+       imports =  []
+    }
+-%>
 <%_ for `import` in imports { -%>
 import <%= `import` %>
 <%_ } -%>
@@ -18,7 +28,7 @@ extension ServiceResolver {
     <%_ let method = service.factory -%>
     <%_ let parameters = method.parameters.filter(annotated: "provided") -%>
 
-    func registeredService(<%= stringify(parameters: parameters, printing: .definition) %>) -> <%= service.resolvedTypeName %> {
+    <%= method.accessLevel %> func registeredService(<%= stringify(parameters: parameters, printing: .definition) %>) -> <%= service.resolvedTypeName %> {
         return resolve(<%= method.returnTypeName %>.self<%= prefixNonEmpty(concatParamNames(of: parameters), with: ", arguments: ") %>)!
     }
 <%_ } -%>
@@ -27,7 +37,7 @@ extension ServiceResolver {
     <%_ let method = service.factory -%>
     <%_ let parameters = method.parameters.filter(annotated: "provided") -%>
 
-    func registeredService(<%= stringify(parameters: parameters, printing: .definition) %>) -> <%= service.resolvedTypeName %> {
+    <%= method.accessLevel %> func registeredService(<%= stringify(parameters: parameters, printing: .definition) %>) -> <%= service.resolvedTypeName %> {
         return resolve(<%= method.returnTypeName %>.self<%= prefixNonEmpty(concatParamNames(of: parameters), with: ", arguments: ") %>)!
     }
 <%_ } -%>
